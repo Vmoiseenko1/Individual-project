@@ -12,11 +12,11 @@ weight_u238_kg = (weight_u235_kg / 0.7) * 100
 cost_u238 = weight_u238_kg * 17.3
 costs_per_person = cost_u238 / population
 weight_u235_half_life = weight_u235_kg * (2**(-((time)/ 70000000)))
-print("Масса U235:", weight_u235_kg, 'кг')
-print("Масса U238:", weight_u238_kg, 'кг')
-print('Стоимость U235:', cost_u235, 'USD')
-print('Стоимость U238:', cost_u238, 'USD')
-print('Масса 235 после', time, ':', weight_u235_half_life, 'кг')
+print("Масса U235:", '{:.2f}'.format(weight_u235_kg), 'кг')
+print("Масса U238:", '{:.2f}'.format(weight_u238_kg), 'кг')
+print('Стоимость U235:', '{:.2f}'.format(cost_u235), 'USD')
+print('Стоимость U238:', '{:.2f}'.format(cost_u238), 'USD')
+print('Масса 235 после', time, ':', '{:.9f}'.format(weight_u235_half_life), 'кг')
 
 
 
